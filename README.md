@@ -7,7 +7,9 @@
 # Quick Workflow Overview :
 
  Texts → [Create embeddings] → [Retrieve similar chunks] → Results
+ 
          OR
+         
  Texts → [Create & Save embeddings] → [Load embeddings + Data] → [Retrieve similar chunks] → Results
 
 # Features : 
@@ -123,3 +125,4 @@
 # License
 
   PocketVec is released under the MIT License.
+
