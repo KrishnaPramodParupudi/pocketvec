@@ -35,8 +35,8 @@
                        |
            +-----------+-----------+
            |                       |
-   One-step Workflow          Persistent Workflow
-(create embeddings + retrieve)  (save embeddings for later)
+    One-step Workflow           Persistent Workflow
+ (create embeddings + retrieve)   (save embeddings for later)
            |                       |
    +-------v--------+       +------v-------+
    | Generate       |       | Generate      |
@@ -125,4 +125,5 @@
 # License
 
   PocketVec is released under the MIT License.
+
 
