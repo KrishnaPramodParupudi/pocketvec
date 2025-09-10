@@ -1,0 +1,40 @@
+# =========================
+# Python & PocketVec ignores
+# =========================
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.env
+.venv/
+venv/
+ENV/
+
+# Test / coverage
+.coverage
+htmlcov/
+.tox/
+.nox/
+*.log
+
+# IDE / editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
