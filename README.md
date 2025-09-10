@@ -1,29 +1,30 @@
-PocketVec
+# PocketVec
 
-PocketVec is a lightweight vector store designed for small to medium datasets. It allows you to efficiently create embeddings for a list of text chunks and retrieve the most similar chunks using either cosine similarity or Euclidean distance.
+ PocketVec is a lightweight vector store designed for small to medium datasets. It allows you to efficiently create    embeddings for a list of text chunks and retrieve the most similar chunks using either cosine similarity or Euclidean distance.
 
-PocketVec is ideal for users who want a fast and easy-to-use solution without needing heavy infrastructure or databases.
+ PocketVec is ideal for users who want a fast and easy-to-use solution without needing heavy infrastructure or databases.
 
-Quick Workflow Overview :
-Texts → [Create embeddings] → [Retrieve similar chunks] → Results
+# Quick Workflow Overview :
+
+ Texts → [Create embeddings] → [Retrieve similar chunks] → Results
          OR
-Texts → [Create & Save embeddings] → [Load embeddings + Data] → [Retrieve similar chunks] → Results
+ Texts → [Create & Save embeddings] → [Load embeddings + Data] → [Retrieve similar chunks] → Results
 
-Features : 
+# Features : 
 
-Lightweight & fast: Optimized for smaller datasets without external dependencies beyond sentence-transformers.
+ Lightweight & fast: Optimized for smaller datasets without external dependencies beyond sentence-transformers.
 
-Flexible workflows:
+ Flexible workflows:
 
-Immediate use – create embeddings and retrieve related text chunks in one go, storing everything in memory.
+ Immediate use – create embeddings and retrieve related text chunks in one go, storing everything in memory.
 
-Persistent embeddings – create embeddings, save them to a file, and reuse them later with the corresponding data chunks.
+ Persistent embeddings – create embeddings, save them to a file, and reuse them later with the corresponding data chunks.
 
-Similarity methods: Cosine similarity and Euclidean distance.
+ Similarity methods: Cosine similarity and Euclidean distance.
 
-Easy integration: Works with any Python project with simple function calls.
+ Easy integration: Works with any Python project with simple function calls.
 
-Detailed Workflow Diagram :
+# Detailed Workflow Diagram :
 
            +------------------------+
            |    User provides       |
@@ -59,66 +60,66 @@ Detailed Workflow Diagram :
                                    |
                                 Results
 
-How it works
+# How it works
 
-Input: Provide your dataset as a list of text chunks.
+ Input: Provide your dataset as a list of text chunks.
 
-Embedding: PocketVec generates embeddings for the texts using a HuggingFace sentence transformer.
+ Embedding: PocketVec generates embeddings for the texts using a HuggingFace sentence transformer.
 
-Retrieve: Query the vector store to find the most similar chunks to your input query.
+ Retrieve: Query the vector store to find the most similar chunks to your input query.
 
-Optional persistence: Save embeddings for later use and reuse them with the original data chunks.
+ Optional persistence: Save embeddings for later use and reuse them with the original data chunks.
 
-Recommended Usage
+# Recommended Usage
 
-PocketVec supports two main workflows:
+ PocketVec supports two main workflows:
 
-One-step embeddings and retrieval
+ One-step embeddings and retrieval
 
-Create embeddings for your data chunks.
+ Create embeddings for your data chunks.
 
-Retrieve the top N most similar chunks to your query.
+ Retrieve the top N most similar chunks to your query.
 
-Separate creation and retrieval
+ Separate creation and retrieval
 
-Generate embeddings and save them to a file.
+ Generate embeddings and save them to a file.
 
-Later, load the embeddings and provide the original data chunks to perform retrieval.
+ Later, load the embeddings and provide the original data chunks to perform retrieval.
 
-Similarity Metrics
+# Similarity Metrics
 
-PocketVec supports the following similarity/distance metrics:
+ PocketVec supports the following similarity/distance metrics:
 
-Cosine similarity – measures angular similarity between vectors.
+ Cosine similarity – measures angular similarity between vectors.
 
-Euclidean distance – measures straight-line distance between vectors in space.
+ Euclidean distance – measures straight-line distance between vectors in space.
 
-Examples
+# Examples
 
-For detailed usage, check the provided examples:
+ For detailed usage, check the provided examples:
 
-Basic workflow: Creating embeddings and retrieving related chunks in one go → examples/demo_basic.py
+ Basic workflow: Creating embeddings and retrieving related chunks in one go → examples/demo_basic.py
 
-Persistent workflow: Saving embeddings and using them later → examples/demo_with_file.py
+ Persistent workflow: Saving embeddings and using them later → examples/demo_with_file.py
 
-Installation
+# Installation
 
-Install PocketVec via pip:
+ Install PocketVec via pip:
 
-pip install pocketvec
+ pip install pocketvec
+ 
+ Dependencies
 
-Dependencies
+ Python 3.8+
 
-Python 3.8+
+ numpy
 
-numpy
+ sentence-transformers
 
-sentence-transformers
+ huggingface-hub
 
-huggingface-hub
+ (These will be installed automatically when using pip.)
 
-(These will be installed automatically when using pip.)
+# License
 
-License
-
-PocketVec is released under the MIT License.
+  PocketVec is released under the MIT License.
